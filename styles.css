@@ -12,14 +12,32 @@ h2 {
     margin: 0;
     padding: .75rem;
 }
-.cards {
-    width: 100%;
+
+main {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.btn-new-game {
-    display: none;
-    margin: .5rem auto;
+#type-selection,
+#pswd-length {
+    flex-direction: row;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#passwords {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#btn-generate-password {
+    margin-top: 1rem;
 }

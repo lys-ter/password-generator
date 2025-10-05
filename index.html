@@ -13,13 +13,26 @@
     </header>
     
     <main>
-        <input id="numbers" type="checkbox" checked="false">
-        <label for="numbers">Include numbers</label>
-        <input id="special_chars" type="checkbox" checked="false">
-        <label for="special_chars">Include special characters</label>
-        <button type="button">Generate passwords</button>
-        
+        <section id="type-selection">
+            <div>
+                <input id="numbers" type="checkbox" checked/>
+                <label for="numbers">Include numbers</label>
+            </div>
+            <div>
+                <input id="special_chars" type="checkbox" checked/>
+                <label for="special_chars">Include special characters</label>
+            </div>
+        </section>
+        <section id="pswd-length">
+            <label for="btn-pswd-length">Password length</label>
+            <input id="btn-pswd-length" type="number" step="1" min="12" max="30" value="12" placeholder="12" />
+        </section>
+        <button id="btn-generate-password" type="button">Generate passwords</button>
     </main>
+     <section id="passwords">
+            <p id="password1"></p>
+            <p id="password2"></p>
+    </section>
 
     <script src="script.js"></script>
 </body>
