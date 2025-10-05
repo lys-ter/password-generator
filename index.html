@@ -4,39 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Black Jack</title>
+    <title>Password Generator</title>
 </head>
 <body>
     <header>
-        <h1>Black Jack</h1>
+        <h1>Generate a <span class="green">random password</span></h1>
+        <h2>Never use an insecure password again</h2>
     </header>
-
+    
     <main>
-        <h2>Dealer</h2>
-        <div class="dealer cards">
-            <!-- dealer cards added here dynamically -->
-        </div>
-        <div class="dealer total">
-            <p class="dealer cards_total"></p>
-        </div>
-        <h2>Player</h2>
-        <div class="player cards">
-            <!-- player cards added here dynamically -->
-        </div>
-        <div class="player total">
-            <p class="player cards_total"></p>
-        </div>
-       
-        <div class="result">
-            <section class="buttons">
-                <button class="btn-hit">Hit</button>
-                <button class="btn-stand">Stand</button>
-                <button class="btn-new-game">New Game</button>
-            </section>
-            <section class="next_action_msg">
-                <p></p>
-            </section>
-        </div>
+        <input id="numbers" type="checkbox" checked="false">
+        <label for="numbers">Include numbers</label>
+        <input id="special_chars" type="checkbox" checked="false">
+        <label for="special_chars">Include special characters</label>
+        <button type="button">Generate passwords</button>
+        
     </main>
 
     <script src="script.js"></script>
